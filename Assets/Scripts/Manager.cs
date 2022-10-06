@@ -198,8 +198,9 @@ public class Manager : MonoBehaviour
             timeLeft = 15;
             questionNum++;
             hadHelp = false;
+	    answers.Clear();
+	    answerButtonList.Clear();
             StartCoroutine(Countdown());
-            answerButtonList.Clear();
             infoPanel.SetActive(true);
 
             for (int i = 0; i < answerButtonArray.Length; i++)
